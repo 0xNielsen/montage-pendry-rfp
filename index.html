@@ -618,6 +618,21 @@
                 --slide-padding: 1.5rem;
             }
 
+            /* Disable scroll-snap on mobile - causes visibility issues */
+            html {
+                scroll-snap-type: none;
+            }
+
+            .slide {
+                scroll-snap-align: none;
+            }
+
+            /* Make all content visible on mobile (no animation dependency) */
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
             .nav-dots {
                 display: none;
             }
@@ -1447,10 +1462,11 @@
             }
 
             setupIntersectionObserver() {
+                // Lower threshold for better mobile support
                 const options = {
                     root: null,
                     rootMargin: '0px',
-                    threshold: 0.5
+                    threshold: 0.15
                 };
 
                 const observer = new IntersectionObserver((entries) => {
@@ -1465,6 +1481,9 @@
                 }, options);
 
                 this.slides.forEach(slide => observer.observe(slide));
+
+                // Immediately show first slide
+                this.slides[0].classList.add('visible');
             }
 
             setupKeyboardNav() {
