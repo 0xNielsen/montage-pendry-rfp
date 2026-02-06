@@ -614,16 +614,214 @@
            RESPONSIVE
            =========================================== */
         @media (max-width: 768px) {
+            :root {
+                --slide-padding: 1.5rem;
+            }
+
             .nav-dots {
                 display: none;
             }
 
+            /* Typography scaling */
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+            }
+
+            .eyebrow {
+                font-size: 0.6rem;
+                letter-spacing: 0.3em;
+            }
+
+            /* Logo rows */
+            .logo-row {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .logo-row img {
+                height: 28px;
+            }
+
+            .logo-row .logo-suntory {
+                height: 35px;
+            }
+
+            .logo-row-large img {
+                height: 35px;
+            }
+
+            .logo-row-large .logo-suntory {
+                height: 45px;
+            }
+
+            .logo-divider {
+                display: none;
+            }
+
+            /* Cards - single column */
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .card {
+                padding: 1.25rem;
+            }
+
+            .card h3 {
+                font-size: 1.25rem;
+            }
+
+            /* RFP cards */
+            .rfp-ask,
+            .rfp-response {
+                padding: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .rfp-label {
+                font-size: 0.6rem;
+            }
+
+            /* Stats */
             .stat-row {
-                gap: 2rem;
+                flex-direction: column;
+                gap: 1.5rem;
             }
 
             .stat-number {
-                font-size: 2.5rem;
+                font-size: 2.25rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+            }
+
+            /* Bottle rows */
+            .bottle-row {
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .bottle-item {
+                width: 80px;
+            }
+
+            .bottle-img {
+                height: 120px;
+            }
+
+            .bottle-label {
+                font-size: 0.65rem;
+            }
+
+            .bottle-row-small .bottle-img {
+                height: 100px;
+            }
+
+            /* Brand rows */
+            .brand-row {
+                flex-direction: column;
+                gap: 1.25rem;
+            }
+
+            .brand-name {
+                font-size: 1.1rem;
+            }
+
+            .brand-desc {
+                font-size: 0.85rem;
+            }
+
+            /* Activation cards */
+            .activation-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .activation-card {
+                padding: 1.25rem;
+            }
+
+            .activation-card h4 {
+                font-size: 1.1rem;
+            }
+
+            /* Country badges */
+            .country-badges {
+                display: flex;
+                margin-left: 0;
+                margin-top: 0.35rem;
+            }
+
+            /* Position tags */
+            .position-tags {
+                margin-left: 0;
+                margin-top: 0.25rem;
+                display: flex;
+            }
+
+            /* Ornaments */
+            .ornament {
+                margin: 1.5rem 0;
+            }
+
+            .ornament-line {
+                width: 25px;
+            }
+
+            /* Prestige card full width fix */
+            .prestige-card {
+                grid-column: 1 !important;
+            }
+
+            /* Closing slide */
+            .closing-slide h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 400px) {
+            :root {
+                --slide-padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .bottle-item {
+                width: 65px;
+            }
+
+            .bottle-img {
+                height: 100px;
+            }
+
+            .bottle-label {
+                font-size: 0.6rem;
+            }
+
+            .card {
+                padding: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
             }
         }
 
