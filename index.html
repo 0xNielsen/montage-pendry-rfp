@@ -851,9 +851,40 @@
                 transform: none;
             }
         }
+
+        /* ===========================================
+           INTERNAL USE BADGE
+           =========================================== */
+        .internal-badge {
+            position: fixed;
+            top: 50px;
+            right: -50px;
+            background: rgba(220, 38, 38, 0.9);
+            color: white;
+            padding: 0.5rem 4rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transform: rotate(45deg);
+            z-index: 1001;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .internal-badge {
+                top: 30px;
+                right: -60px;
+                padding: 0.4rem 4rem;
+                font-size: 0.55rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Internal Use Badge -->
+    <div class="internal-badge">Internal Use Only</div>
+
     <!-- Progress bar -->
     <div class="progress-bar"></div>
 
@@ -1038,8 +1069,106 @@
         </div>
     </section>
 
-    <!-- SLIDE 5: Portfolio by Placement -->
+    <!-- SLIDE 5: Menu Intelligence -->
     <section class="slide" data-slide="5">
+        <div class="slide-inner">
+            <p class="eyebrow reveal">Menu Research</p>
+            <h2 class="reveal">Already On Their Menus</h2>
+            <p class="subtitle reveal">Your bartenders are already choosing our brands. Here's what we found.</p>
+
+            <div class="card-grid reveal" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="card" style="border-left: 4px solid var(--accent);">
+                    <h3>Suntory Brands Spotted</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.75rem;">Currently on Pendry & Montage menus</p>
+                    <ul>
+                        <li><strong>Roku Gin</strong> — Montage Big Sky, Montage Laguna Beach</li>
+                        <li><strong>Haku Vodka</strong> — Pendry Newport Beach, Pendry DC</li>
+                        <li><strong>El Tesoro</strong> — Bar Pendry West Hollywood</li>
+                        <li><strong>Maker's Mark 46</strong> — Montage Kapalua Bay</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Featured Cocktails</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.75rem;">Our brands in signature serves</p>
+                    <ul>
+                        <li><strong>Apollo</strong> — Roku Gin, Fatourada, Lillet <span style="color: var(--text-light);">$26</span></li>
+                        <li><strong>English Garden</strong> — Roku Gin, Umami Vermouth <span style="color: var(--text-light);">$23</span></li>
+                        <li><strong>Paloma</strong> — El Tesoro, Grapefruit, Lime <span style="color: var(--text-light);">$20</span></li>
+                        <li><strong>Beat the Heat</strong> — Maker's 46, Bitters, Mint <span style="color: var(--text-light);">$24</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ornament reveal">
+                <div class="ornament-line"></div>
+                <div class="ornament-diamond"></div>
+                <div class="ornament-line"></div>
+            </div>
+
+            <p class="reveal" style="color: var(--text-secondary); font-size: 0.95rem; text-align: center;"><strong>The opportunity:</strong> Bartenders already trust our brands. A formal program gives us the structure to expand.</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 6: Competitive Landscape -->
+    <section class="slide" data-slide="6">
+        <div class="slide-inner">
+            <p class="eyebrow reveal">Competitive Intel</p>
+            <h2 class="reveal">Who We're Up Against</h2>
+            <p class="subtitle reveal">Current spirit placements across Pendry & Montage properties.</p>
+
+            <div class="card-grid reveal" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="card">
+                    <h3>Vodka</h3>
+                    <ul>
+                        <li><strong>Grey Goose</strong> — Both brands, signature cocktails</li>
+                        <li><strong>Belvedere</strong> — Both brands, Vesper at Pendry</li>
+                        <li><strong>Ketel One</strong> — Pendry DC ($16-20)</li>
+                        <li><strong>Tito's</strong> — Pendry DC ($14-20)</li>
+                        <li><strong style="color: var(--accent);">Haku</strong> — <span style="color: #16a34a;">Our brand, already placed</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Gin</h3>
+                    <ul>
+                        <li><strong>Plymouth</strong> — Both brands, classic cocktails</li>
+                        <li><strong>Tanqueray No. 10</strong> — Montage Big Sky</li>
+                        <li><strong style="color: var(--accent);">Roku</strong> — <span style="color: #16a34a;">Our brand, 2 Montage properties</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Tequila</h3>
+                    <ul>
+                        <li><strong>Don Julio</strong> — Pendry Park City ($22-50)</li>
+                        <li><strong>Casamigos</strong> — Pendry Park City ($22-26)</li>
+                        <li><strong>Clase Azul</strong> — Pendry Park City ($48-415)</li>
+                        <li><strong>Siete Leguas</strong> — Montage Laguna Beach</li>
+                        <li><strong style="color: var(--accent);">El Tesoro</strong> — <span style="color: #16a34a;">Our brand, Pendry WeHo</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Whiskey</h3>
+                    <ul>
+                        <li><strong>WhistlePig</strong> — Montage Laguna, Big Sky</li>
+                        <li><strong>High West</strong> — Pendry San Diego</li>
+                        <li><strong>Sagamore Rye</strong> — Pendry Baltimore (local)</li>
+                        <li><strong>Hennessy</strong> — Both brands</li>
+                        <li><strong style="color: var(--accent);">Maker's 46</strong> — <span style="color: #16a34a;">Our brand, Kapalua Bay</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ornament reveal">
+                <div class="ornament-line"></div>
+                <div class="ornament-diamond"></div>
+                <div class="ornament-line"></div>
+            </div>
+
+            <p class="reveal" style="color: var(--text-secondary); font-size: 0.95rem; text-align: center;"><strong>Key insight:</strong> Premium positioning across all categories. Grey Goose and Belvedere dominate vodka. Don Julio leads tequila. Room for Suntory portfolio expansion.</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 7: Portfolio by Placement -->
+    <section class="slide" data-slide="7">
         <div class="slide-inner">
             <p class="eyebrow reveal">RFP Categories</p>
             <h2 class="reveal">Brands by RFP Placement</h2>
@@ -1091,8 +1220,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 6: Honor Bar -->
-    <section class="slide" data-slide="6">
+    <!-- SLIDE 8: Honor Bar -->
+    <section class="slide" data-slide="8">
         <div class="slide-inner">
             <p class="eyebrow reveal">In-Room Minibar</p>
             <h2 class="reveal">Honor Bar Opportunity</h2>
@@ -1150,8 +1279,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 7: Activation Programs -->
-    <section class="slide" data-slide="7">
+    <!-- SLIDE 9: Activation Programs -->
+    <section class="slide" data-slide="9">
         <div class="slide-inner">
             <p class="eyebrow reveal">Activations</p>
             <h2 class="reveal">Sensory-Forward Experiences</h2>
@@ -1182,8 +1311,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 8: Support & Resources -->
-    <section class="slide" data-slide="8">
+    <!-- SLIDE 10: Support & Resources -->
+    <section class="slide" data-slide="10">
         <div class="slide-inner">
             <p class="eyebrow reveal">Support</p>
             <h2 class="reveal">Partnership Resources</h2>
@@ -1221,8 +1350,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 9: Global Availability -->
-    <section class="slide" data-slide="9">
+    <!-- SLIDE 11: Global Availability -->
+    <section class="slide" data-slide="11">
         <div class="slide-inner">
             <p class="eyebrow reveal">Distribution</p>
             <h2 class="reveal">Global Portfolio Availability</h2>
@@ -1262,8 +1391,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 10: House of Suntory -->
-    <section class="slide" data-slide="10">
+    <!-- SLIDE 12: House of Suntory -->
+    <section class="slide" data-slide="12">
         <div class="slide-inner">
             <p class="eyebrow reveal">House of Suntory</p>
             <h2 class="reveal">The Art of Japanese Whisky</h2>
@@ -1328,8 +1457,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 11: American Whiskey -->
-    <section class="slide" data-slide="11">
+    <!-- SLIDE 13: American Whiskey -->
+    <section class="slide" data-slide="13">
         <div class="slide-inner">
             <p class="eyebrow reveal">American Whiskey</p>
             <h2 class="reveal">Kentucky Bourbon Heritage</h2>
@@ -1390,8 +1519,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 12: Premium Tequila -->
-    <section class="slide" data-slide="12">
+    <!-- SLIDE 14: Premium Tequila -->
+    <section class="slide" data-slide="14">
         <div class="slide-inner">
             <p class="eyebrow reveal">Premium Tequila</p>
             <h2 class="reveal">El Tesoro <span class="ampersand">&</span> Hornitos</h2>
@@ -1437,8 +1566,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 13: Closing -->
-    <section class="slide closing-slide" data-slide="13">
+    <!-- SLIDE 15: Closing -->
+    <section class="slide closing-slide" data-slide="15">
         <div class="slide-inner">
             <div class="logo-row reveal" style="margin-bottom: 2rem;">
                 <img src="assets/logos/Suntory_Global_Spirits-Logo.png" alt="Suntory Global Spirits" class="logo-suntory">
