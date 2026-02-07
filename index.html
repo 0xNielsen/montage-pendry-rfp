@@ -799,6 +799,11 @@
                 grid-column: 1 !important;
             }
 
+            /* RFP objectives grid */
+            .slide [style*="grid-template-columns: repeat(3"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
             /* Closing slide */
             .closing-slide h2 {
                 font-size: 1.5rem;
@@ -1078,17 +1083,15 @@
             <h2 class="reveal">Brands by RFP Placement</h2>
             <p class="subtitle reveal">Mapping our portfolio to the exact categories Pendry is RFP'ing for.</p>
 
-            <div class="card-grid reveal" style="margin-bottom: 1.5rem;">
-                <div class="card" style="grid-column: 1 / -1; background: var(--bg-secondary); border: none;">
-                    <h3 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0.75rem;">RFP Bar Program Objectives</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                        <span class="rfp-tag">Clear luxury alignment</span>
-                        <span class="rfp-tag">Tiered banquet pricing</span>
-                        <span class="rfp-tag">Distinctive brand story & guest relevance</span>
-                        <span class="rfp-tag">Support resources (education, tools, activation)</span>
-                        <span class="rfp-tag">Allocated/available barrels</span>
-                        <span class="rfp-tag">Activation concepts</span>
-                    </div>
+            <div class="reveal" style="background: linear-gradient(135deg, var(--bg-secondary) 0%, #e8e3d9 100%); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
+                <p style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; font-weight: 600;">Pendry's RFP Objectives</p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem 1.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+                    <span>✓ Clear luxury alignment</span>
+                    <span>✓ Tiered banquet pricing</span>
+                    <span>✓ Distinctive brand story</span>
+                    <span>✓ Support resources</span>
+                    <span>✓ Allocated barrels</span>
+                    <span>✓ Activation concepts</span>
                 </div>
             </div>
 
