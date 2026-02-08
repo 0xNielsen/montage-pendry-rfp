@@ -1028,81 +1028,56 @@
             <h2 class="reveal">FY2024–2025 Performance</h2>
             <p class="subtitle reveal">Year-over-year decline signals opportunity for a formal program structure.</p>
 
-            <!-- Visual Bar Comparison -->
-            <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-                <!-- NSV Chart -->
-                <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px;">
-                    <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 1rem;">Net Sales Value</div>
-                    <div style="display: flex; align-items: flex-end; gap: 1.5rem; height: 120px;">
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-                            <div style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">$212K</div>
-                            <div style="width: 100%; height: 100px; background: linear-gradient(to top, var(--accent), var(--accent-light)); border-radius: 4px 4px 0 0;"></div>
-                            <div style="font-size: 0.75rem; color: var(--text-light); margin-top: 0.5rem;">FY2024</div>
-                        </div>
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-                            <div style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">$167K</div>
-                            <div style="width: 100%; height: 79px; background: linear-gradient(to top, #a85454, rgba(168,84,84,0.3)); border-radius: 4px 4px 0 0;"></div>
-                            <div style="font-size: 0.75rem; color: var(--text-light); margin-top: 0.5rem;">FY2025</div>
-                        </div>
-                    </div>
-                    <div style="text-align: center; margin-top: 1rem; font-family: var(--font-display); font-size: 1.25rem; color: #a85454;">−21% YoY</div>
+            <!-- YoY Performance Table -->
+            <div class="reveal" style="background: var(--bg-card); border-radius: 8px; overflow: hidden; margin: 2rem 0;">
+                <!-- Header Row -->
+                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; background: var(--bg-secondary); padding: 0.75rem 1.5rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light);">
+                    <div>Metric</div>
+                    <div style="text-align: right;">FY2024</div>
+                    <div style="text-align: right;">FY2025</div>
+                    <div style="text-align: right;">YoY Change</div>
                 </div>
-                <!-- Volume Chart -->
-                <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px;">
-                    <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 1rem;">9L Case Volume</div>
-                    <div style="display: flex; align-items: flex-end; gap: 1.5rem; height: 120px;">
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-                            <div style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">1,121</div>
-                            <div style="width: 100%; height: 100px; background: linear-gradient(to top, var(--accent), var(--accent-light)); border-radius: 4px 4px 0 0;"></div>
-                            <div style="font-size: 0.75rem; color: var(--text-light); margin-top: 0.5rem;">FY2024</div>
-                        </div>
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-                            <div style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">789</div>
-                            <div style="width: 100%; height: 70px; background: linear-gradient(to top, #a85454, rgba(168,84,84,0.3)); border-radius: 4px 4px 0 0;"></div>
-                            <div style="font-size: 0.75rem; color: var(--text-light); margin-top: 0.5rem;">FY2025</div>
-                        </div>
+                <!-- NSV Row -->
+                <div style="position: relative; border-bottom: 1px solid var(--bg-secondary); overflow: hidden;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 79%; background: rgba(168,84,84,0.08);"></div>
+                    <div style="position: relative; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 1rem 1.5rem; align-items: center;">
+                        <div style="font-weight: 500;">Net Sales Value</div>
+                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">$212K</div>
+                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">$167K</div>
+                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: #a85454;">−21%</div>
                     </div>
-                    <div style="text-align: center; margin-top: 1rem; font-family: var(--font-display); font-size: 1.25rem; color: #a85454;">−30% YoY</div>
+                </div>
+                <!-- Volume Row -->
+                <div style="position: relative; overflow: hidden;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 70%; background: rgba(168,84,84,0.08);"></div>
+                    <div style="position: relative; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 1rem 1.5rem; align-items: center;">
+                        <div style="font-weight: 500;">9L Case Volume</div>
+                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">1,121</div>
+                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">789</div>
+                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: #a85454;">−30%</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Category Trends with Progress Bars -->
+            <!-- Category Trends -->
             <div class="card-grid reveal" style="grid-template-columns: repeat(2, 1fr);">
                 <div class="card" style="border-left: 4px solid #5a8a6b;">
                     <h3 style="color: #5a8a6b;">Growing Categories</h3>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.75rem;">Japanese whisky momentum</p>
-                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;"><strong style="font-size: 0.85rem;">Roku Gin</strong><span style="color: #5a8a6b; font-weight: 500;">+26%</span></div>
-                            <div style="height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;"><div style="width: 76%; height: 100%; background: #5a8a6b; border-radius: 3px;"></div></div>
-                        </div>
-                        <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;"><strong style="font-size: 0.85rem;">Hibiki</strong><span style="color: #5a8a6b; font-weight: 500;">+21%</span></div>
-                            <div style="height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;"><div style="width: 71%; height: 100%; background: #5a8a6b; border-radius: 3px;"></div></div>
-                        </div>
-                        <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;"><strong style="font-size: 0.85rem;">Toki</strong><span style="color: #5a8a6b; font-weight: 500;">+10%</span></div>
-                            <div style="height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;"><div style="width: 60%; height: 100%; background: #5a8a6b; border-radius: 3px;"></div></div>
-                        </div>
-                    </div>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.5rem;">Japanese whisky momentum</p>
+                    <ul>
+                        <li><strong>Roku Gin</strong> <span style="color: #5a8a6b;">+26%</span></li>
+                        <li><strong>Hibiki</strong> <span style="color: #5a8a6b;">+21%</span></li>
+                        <li><strong>Toki</strong> <span style="color: #5a8a6b;">+10%</span></li>
+                    </ul>
                 </div>
                 <div class="card" style="border-left: 4px solid #a85454;">
                     <h3 style="color: #a85454;">Declining Categories</h3>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.75rem;">Bourbon without program support</p>
-                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;"><strong style="font-size: 0.85rem;">Knob Creek</strong><span style="color: #a85454; font-weight: 500;">−74%</span></div>
-                            <div style="height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;"><div style="width: 26%; height: 100%; background: #a85454; border-radius: 3px;"></div></div>
-                        </div>
-                        <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;"><strong style="font-size: 0.85rem;">Hornitos</strong><span style="color: #a85454; font-weight: 500;">−47%</span></div>
-                            <div style="height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;"><div style="width: 53%; height: 100%; background: #a85454; border-radius: 3px;"></div></div>
-                        </div>
-                        <div>
-                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;"><strong style="font-size: 0.85rem;">Maker's Mark</strong><span style="color: #a85454; font-weight: 500;">−23%</span></div>
-                            <div style="height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;"><div style="width: 77%; height: 100%; background: #a85454; border-radius: 3px;"></div></div>
-                        </div>
-                    </div>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.5rem;">Bourbon without program support</p>
+                    <ul>
+                        <li><strong>Knob Creek</strong> <span style="color: #a85454;">−74%</span></li>
+                        <li><strong>Hornitos</strong> <span style="color: #a85454;">−47%</span></li>
+                        <li><strong>Maker's Mark</strong> <span style="color: #a85454;">−23%</span></li>
+                    </ul>
                 </div>
             </div>
 
@@ -1125,7 +1100,7 @@
                         Growth Properties
                     </h3>
                     <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 92%; background: rgba(90,138,107,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1138,7 +1113,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 82%; background: rgba(90,138,107,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1151,7 +1126,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 21%; background: rgba(90,138,107,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1164,7 +1139,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 11%; background: rgba(90,138,107,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1187,7 +1162,7 @@
                         Opportunity Properties
                     </h3>
                     <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 9%; background: rgba(168,84,84,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1200,7 +1175,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 17%; background: rgba(168,84,84,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1213,7 +1188,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: rgba(168,84,84,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
@@ -1226,7 +1201,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
                             <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 29%; background: rgba(168,84,84,0.1);"></div>
                             <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
