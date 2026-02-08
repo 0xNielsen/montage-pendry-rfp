@@ -1028,56 +1028,107 @@
             <h2 class="reveal">FY2024–2025 Performance</h2>
             <p class="subtitle reveal">Year-over-year decline signals opportunity for a formal program structure.</p>
 
-            <!-- YoY Performance Table -->
-            <div class="reveal" style="background: var(--bg-card); border-radius: 8px; overflow: hidden; margin: 2rem 0;">
-                <!-- Header Row -->
-                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; background: var(--bg-secondary); padding: 0.75rem 1.5rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light);">
-                    <div>Metric</div>
-                    <div style="text-align: right;">FY2024</div>
-                    <div style="text-align: right;">FY2025</div>
-                    <div style="text-align: right;">YoY Change</div>
-                </div>
-                <!-- NSV Row -->
-                <div style="position: relative; border-bottom: 1px solid var(--bg-secondary); overflow: hidden;">
-                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 79%; background: rgba(168,84,84,0.08);"></div>
-                    <div style="position: relative; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 1rem 1.5rem; align-items: center;">
-                        <div style="font-weight: 500;">Net Sales Value</div>
-                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">$212K</div>
-                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">$167K</div>
-                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: #a85454;">−21%</div>
+            <!-- Tableau-style YoY Comparison -->
+            <div class="reveal" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 1.5rem;">
+                <!-- Net Sales Value -->
+                <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 1rem; font-weight: 600;">Net Sales Value</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">FY2024</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 100%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; min-width: 50px;">$212K</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0;">
+                            <div style="font-size: 0.85rem; font-weight: 500;">FY2025</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 79%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; min-width: 50px; color: #a85454;">$167K <small>(−21%)</small></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Volume Row -->
-                <div style="position: relative; overflow: hidden;">
-                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 70%; background: rgba(168,84,84,0.08);"></div>
-                    <div style="position: relative; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 1rem 1.5rem; align-items: center;">
-                        <div style="font-weight: 500;">9L Case Volume</div>
-                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">1,121</div>
-                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem;">789</div>
-                        <div style="text-align: right; font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: #a85454;">−30%</div>
+                <!-- 9L Case Volume -->
+                <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 1rem; font-weight: 600;">9L Case Volume</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">FY2024</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 100%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; min-width: 50px;">1,121</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0;">
+                            <div style="font-size: 0.85rem; font-weight: 500;">FY2025</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 70%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; min-width: 50px; color: #a85454;">789 <small>(−30%)</small></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Category Trends -->
-            <div class="card-grid reveal" style="grid-template-columns: repeat(2, 1fr);">
-                <div class="card" style="border-left: 4px solid #5a8a6b;">
-                    <h3 style="color: #5a8a6b;">Growing Categories</h3>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.5rem;">House of Suntory momentum</p>
-                    <ul>
-                        <li><strong>Roku Gin</strong> <span style="color: #5a8a6b;">+26%</span></li>
-                        <li><strong>Hibiki</strong> <span style="color: #5a8a6b;">+21%</span></li>
-                        <li><strong>Toki</strong> <span style="color: #5a8a6b;">+10%</span></li>
-                    </ul>
+            <!-- Category Trends - Tableau style -->
+            <div class="reveal" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 1.5rem;">
+                <!-- Growing Categories -->
+                <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="color: #5a8a6b; font-size: 0.9rem; margin-bottom: 0.25rem; font-weight: 600;">Growing Categories</h3>
+                    <p style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">House of Suntory momentum</p>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Roku Gin</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 100%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; color: #5a8a6b;">+26%</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Hibiki</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 81%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; color: #5a8a6b;">+21%</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0;">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Toki</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 38%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; color: #5a8a6b;">+10%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card" style="border-left: 4px solid #a85454;">
-                    <h3 style="color: #a85454;">Declining Categories</h3>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.5rem;">Bourbon without program support</p>
-                    <ul>
-                        <li><strong>Knob Creek</strong> <span style="color: #a85454;">−74%</span></li>
-                        <li><strong>Hornitos</strong> <span style="color: #a85454;">−47%</span></li>
-                        <li><strong>Maker's Mark</strong> <span style="color: #a85454;">−23%</span></li>
-                    </ul>
+                <!-- Declining Categories -->
+                <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="color: #a85454; font-size: 0.9rem; margin-bottom: 0.25rem; font-weight: 600;">Declining Categories</h3>
+                    <p style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">Bourbon without program support</p>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Knob Creek</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 100%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; color: #a85454;">−74%</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Hornitos</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 64%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; color: #a85454;">−47%</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0;">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Maker's Mark</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 31%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap; color: #a85454;">−23%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1092,126 +1143,73 @@
             <h2 class="reveal">FY2025 Performance by Location</h2>
             <p class="subtitle reveal">Four properties growing, seven declining. Formal programs can replicate wins and reverse losses.</p>
 
-            <div class="reveal" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
+            <!-- Tableau-style bar chart -->
+            <div class="reveal" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 1.5rem;">
                 <!-- Growth Properties -->
-                <div>
-                    <h3 style="color: #5a8a6b; font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="width: 8px; height: 8px; background: #5a8a6b; border-radius: 50%;"></span>
-                        Growth Properties
-                    </h3>
-                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 92%; background: rgba(90,138,107,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Pendry Newport Beach</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$38.3K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5a8a6b" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #5a8a6b; font-weight: 500;">+41%</span>
-                                </div>
+                <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="color: #5a8a6b; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 600;">Growth Properties</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Pendry Newport Beach</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 92%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$38.3K (+41%)</span>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 82%; background: rgba(90,138,107,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Pendry Washington DC</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$33.9K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5a8a6b" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #5a8a6b; font-weight: 500;">+37%</span>
-                                </div>
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Pendry Washington DC</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 82%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$33.9K (+37%)</span>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 21%; background: rgba(90,138,107,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Sagamore Pendry Baltimore</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$8.9K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5a8a6b" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #5a8a6b; font-weight: 500;">+4%</span>
-                                </div>
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Sagamore Pendry Baltimore</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 21%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$8.9K (+4%)</span>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 11%; background: rgba(90,138,107,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Montage Deer Valley</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$4.6K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5a8a6b" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #5a8a6b; font-weight: 500;">+3%</span>
-                                </div>
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0;">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Montage Deer Valley</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 11%; height: 18px; background: #5a8a6b; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$4.6K (+3%)</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Declining Properties -->
-                <div>
-                    <h3 style="color: #a85454; font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="width: 8px; height: 8px; background: #a85454; border-radius: 50%;"></span>
-                        Opportunity Properties
-                    </h3>
-                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 9%; background: rgba(168,84,84,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Montage Healdsburg</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$3.7K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a85454" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #a85454; font-weight: 500;">−79%</span>
-                                </div>
+                <!-- Opportunity Properties -->
+                <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="color: #a85454; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 600;">Opportunity Properties</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Pendry San Diego</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 100%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$41.4K (−43%)</span>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 17%; background: rgba(168,84,84,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Pendry Chicago</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$7.0K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a85454" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #a85454; font-weight: 500;">−59%</span>
-                                </div>
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Pendry West Hollywood</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 29%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$12.2K (−42%)</span>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: rgba(168,84,84,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Pendry San Diego</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$41.4K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a85454" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #a85454; font-weight: 500;">−43%</span>
-                                </div>
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--bg-secondary);">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Pendry Chicago</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 17%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$7.0K (−59%)</span>
                             </div>
                         </div>
-                        <div style="background: var(--bg-card); padding: 0.75rem 1rem; border-radius: 6px; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.06);">
-                            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 29%; background: rgba(168,84,84,0.1);"></div>
-                            <div style="position: relative; display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <div style="font-weight: 500;">Pendry West Hollywood</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-light);">$12.2K NSV</div>
-                                </div>
-                                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a85454" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-                                    <span style="font-family: var(--font-display); font-size: 1.25rem; color: #a85454; font-weight: 500;">−42%</span>
-                                </div>
+                        <div style="display: grid; grid-template-columns: 160px 1fr; gap: 0.75rem; align-items: center; padding: 0.5rem 0;">
+                            <div style="font-size: 0.85rem; font-weight: 500;">Montage Healdsburg</div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="width: 9%; height: 18px; background: #a85454; border-radius: 2px;"></div>
+                                <span style="font-size: 0.85rem; white-space: nowrap;">$3.7K (−79%)</span>
                             </div>
                         </div>
                     </div>
